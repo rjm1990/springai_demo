@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: vector-redis
+  ai:
+#    openai:
+#      api-key: sk-36e2931833d145369e23f2a50b24261a
+#      base-url: https://dashscope.aliyuncs.com/compatible-mode
+#      chat:
+#          options:
+#              model: qwen-plus
+#      embedding:
+#        options:
+#          model: text-embedding-v1
+    ollama:
+      base-url: http://127.0.0.1:11434
+      chat:
+        model: deepseek-r1:7b
+      embedding:
+        model: nomic-embed-text:latest
+
+    vectorstore:
+      redis:
+        initialize-schema: true
+        prefix: pdf
+        index-name: index-pdf
+
+  data:
+    redis:
+      host: 192.168.50.74
+      port: 36379 # Redis服务器连接端口
