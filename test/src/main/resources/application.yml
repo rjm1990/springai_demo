@@ -6,7 +6,7 @@ spring:
     name: vector-redis
   ai:
 #    openai:
-#      api-key: sk-36e2931833d145369e23f2a50b24261a
+#      api-key: sk-36e2931833d1453*******
 #      base-url: https://dashscope.aliyuncs.com/compatible-mode
 #      chat:
 #          options:
